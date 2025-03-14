@@ -9,6 +9,19 @@ vim.cmd([[
 set number relativenumber
 ]])
 
+-- using the terminal from neovim
+if vim.fn.has('win32') then
+    vim.cmd([[
+        set shell=powershell.exe
+        set shellxquote=
+        let &shellcmdflag = '-NoLogo -NoProfile -ExecutionPolicy RemoteSigned -Command '
+        let &shellquote   = ''
+        let &shellpipe    = '| Out-File -Encoding UTF8 %s'
+        let &shellredir   = '| Out-File -Encoding UTF8 %s'
+    ]])
+end
+vim.keymap.set('t', '<esc>', '<C-\\><C-N>', {silent = true})
+
 -- tab key
 vim.opt.expandtab = true
 vim.opt.tabstop = 4
