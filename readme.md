@@ -1,7 +1,9 @@
 # Windows Dotfiles
 ## Prerequisites
-1. Neovim [RipGrep]
-1. Glazewm [Zebar]
+1. RipGrep
+1. CaskaydiaMono Nerd Font
+1. Neovim 
+1. Glazewm
 1. PowerToys (PowerToys Run & ZoomIt)
 1. Windows Terminal
 <br>
