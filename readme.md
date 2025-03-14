@@ -6,6 +6,7 @@
 1. Glazewm
 1. PowerToys (PowerToys Run & ZoomIt)
 1. Windows Terminal
+1. Oh My Posh
 <br>
 Each folder has a `readme.md` on how to properly configure
 
