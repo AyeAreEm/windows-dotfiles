@@ -1,0 +1,159 @@
+/**
+ * Import the Nerdfonts icon font.
+ * Ref https://www.nerdfonts.com/cheat-sheet for a cheatsheet of available Nerdfonts icons.
+ */
+@import 'https://www.nerdfonts.com/assets/css/webfont.css';
+
+:root {
+  --base: "#232136";
+  --surface: "#2a273f";
+  --overlay: "#393552";
+  --inactive: "#6e6a86";
+  --muted: "#6e6a86";
+  --subtle: "#908caa";
+  --text: "#e0def4";
+  --love: "#eb6f92";
+  --gold: "#f6c177";
+  --rose: "#ea9a97";
+  --pine: "#3e8fb0";
+  --foam: "#9ccfd8";
+  --iris: "#c4a7e7";
+  --highlight_low: "#2a283e";
+  --highlight_med: "#44415a";
+  --highlight_high: "#56526e";
+}
+
+i {
+  color: #e0def4;
+  margin-right: 7px;
+}
+
+body {
+  color: #e0def4;
+  font-family: ui-monospace, monospace;
+  font-size: 12px;
+  overflow: hidden;
+}
+
+div,
+span,
+p {
+  cursor: default;
+  user-select: none;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+#root {
+  border: 1px solid #c4a7e7;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+}
+
+.app {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  height: 100%;
+  padding: 4px 1.5vw;
+}
+
+.left,
+.center,
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.center {
+  justify-self: center;
+}
+
+.right {
+  justify-self: end;
+}
+
+.logo,
+.binding-mode,
+.tiling-direction,
+.paused-button,
+.network,
+.memory,
+.cpu,
+.battery {
+  margin-right: 20px;
+}
+
+.workspaces {
+  display: flex;
+  align-items: center;
+}
+
+.workspace {
+  background: rgb(255 255 255 / 5%);
+  margin-right: 4px;
+  padding: 4px 8px;
+  color: #e0def4;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+
+  &.displayed {
+    background: #6e6a86;
+  }
+
+  &.focused,
+  &:hover {
+    background: #3e8fb0;
+  }
+}
+
+.binding-mode,
+.tiling-direction,
+.paused-button {
+  background: rgb(255 255 255 / 15%);
+  color: rgb(255 255 255 / 90%);
+  border-radius: 2px;
+  line-height: 1;
+  padding: 4px 8px;
+  border: 0;
+  cursor: pointer;
+}
+
+.binding-mode {
+  margin-right: 4px;
+  background: #c4a7e7;
+}
+
+.tiling-direction {
+    background: #232136;
+}
+
+.memory {
+    color: #ea9a97;
+}
+
+.cpu {
+  color: #f6c177;
+}
+.cpu .high-usage {
+  color: #eb6f92;
+}
+
+.battery {
+  color: #9ccfd8;
+  position: relative;
+}
+
+.battery .charging-icon {
+  position: absolute;
+  font-size: 7px;
+  left: -8px;
+  top: 3px;
+}

@@ -1,3 +1,19 @@
+base: &base "#232136"
+surface: &surface "#2a273f"
+overlay: &overlay "#393552"
+inactive: &inactive "#6e6a86"
+muted: &muted "#6e6a86"
+subtle: &subtle "#908caa"
+text: &text "#e0def4"
+love: &love "#eb6f92"
+gold: &gold "#f6c177"
+rose: &rose "#ea9a97"
+pine: &pine "#3e8fb0"
+foam: &foam "#9ccfd8"
+iris: &iris "#c4a7e7"
+highlight_low: &highlight_low "#2a283e"
+highlight_med: &highlight_med "#44415a"
+highlight_high: &highlight_high "#56526e"
 general:
   # Commands to run when the WM has started. This is useful for running a
   # script or launching another application.
@@ -60,7 +76,7 @@ window_effects:
     # ** Exclusive to Windows 11 due to API limitations.
     border:
       enabled: true
-      color: '#c4a7e7'
+      color: *iris
 
     # Remove the title bar from the window's frame. Note that this can
     # cause rendering issues for some applications.
@@ -85,7 +101,7 @@ window_effects:
   other_windows:
     border:
       enabled: true
-      color: '#26233a'
+      color: *overlay
     hide_title_bar:
       enabled: false
     corner_style:
